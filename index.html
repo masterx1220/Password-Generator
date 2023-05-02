@@ -1,0 +1,26 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="h1Wrapper">
+                <h1>Don't get <br><span>caught lackin</span></h1>
+            </div>
+            <h3>Generate a random password now!</h3>
+            <div id="charValue" class = "range-input">
+                <button id="passwordBtn" class="btn" onclick="">Generate Password</button>
+                <input type = "range" min="0" max = "20" value="0" step="1" id="slideValue" oninput="this.nextElementSibling.value = this.value" >
+                <div class="value">
+                    <div id="numValue"></div>
+                </div>
+            </div>
+        </div>
+        <div class="passContainer">
+            <h3 id="passwordOne" class="btn leftH3">Your new password</h3>
+
+            <h3 id="passwordTwo" class="btn rightH3">Your new password</h3>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
